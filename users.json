@@ -1,0 +1,26 @@
+{
+    "c352e228-7bb6-4652-8a98-fd6dbf7d3766": {
+        "id": "c352e228-7bb6-4652-8a98-fd6dbf7d3766",
+        "name": "Mario Mabande",
+        "email": "mario.mabande@example.com",
+        "description": "Student"
+    },
+    "1f95216d-64f0-4b2b-ae0b-f9726725e915": {
+        "id": "1f95216d-64f0-4b2b-ae0b-f9726725e915",
+        "name": "Ines",
+        "email": "ines@example.com",
+        "description": "Doctor"
+    },
+    "19acd072-2af5-4f5d-833a-0a73415babca": {
+        "id": "19acd072-2af5-4f5d-833a-0a73415babca",
+        "name": "AAA BBB",
+        "email": "aaa.bbb@example.com",
+        "description": "Updated Test"
+    },
+    "c8845536-c5d0-4350-b46f-d83a9de855b3": {
+        "id": "c8845536-c5d0-4350-b46f-d83a9de855b3",
+        "name": "ABC DEF",
+        "email": "abc@example.com",
+        "description": "Test"
+    }
+}
