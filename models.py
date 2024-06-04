@@ -1,4 +1,3 @@
-# models.py
 from spyne import Unicode
 from spyne.model.complex import ComplexModel, Array
 

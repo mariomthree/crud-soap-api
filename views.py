@@ -6,12 +6,12 @@ import controllers
 class UserService(ServiceBase):
 
     @rpc(Unicode, Unicode, Unicode, _returns=Unicode)
-    def create_user(ctx, name, email, description):
-        return controllers.create_user(name, email, description)
+    def add_user(ctx, name, email, description):
+        return controllers.add_user(name, email, description)
 
     @rpc(Unicode, _returns=ResponseData)
-    def read_user(ctx, user_id):
-        user = controllers.read_user(user_id)
+    def get_user(ctx, user_id):
+        user = controllers.get_user(user_id)
         if user:
             user = User(
                 id=user['id'],
@@ -23,7 +23,7 @@ class UserService(ServiceBase):
         return ResponseData(user=User(), success='0', message='User not found.')
 
     @rpc(_returns=ResponseData)
-    def read_users(ctx):
+    def get_users(ctx):
         users = controllers.list_users()
         if users:
             users_data = [User(

@@ -1,4 +1,3 @@
-# controllers.py
 import json
 import uuid
 from models import User
@@ -24,7 +23,7 @@ def save_users(users):
         json.dump(users, file, indent=4)
 
 
-def create_user(name, email, description):
+def add_user(name, email, description):
     users = load_users()
     user_id = str(uuid.uuid4())
     users[user_id] = {
@@ -37,7 +36,7 @@ def create_user(name, email, description):
     return user_id
 
 
-def read_user(user_id):
+def get_user(user_id):
     users = load_users()
     return users.get(user_id)
 
